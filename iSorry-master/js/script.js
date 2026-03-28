@@ -17,11 +17,11 @@ $(document).ready(function() {
 $(document).delegate("#submit", "vclick", function () {
 
     if ($("#gender").val() == "boy") {
-        var utterance = new SpeechSynthesisUtterance("I'm sorry. Please forgive me PRANJAL.");
+        var utterance = new SpeechSynthesisUtterance("I'm sorry. Please forgive me Ben.");
         utterance.pitch = .1;
         window.speechSynthesis.speak(utterance);
     } else if ($("#gender").val() == "girl") {
-        var utterance = new SpeechSynthesisUtterance("I'm sorry. Please forgive me PRANJAL.");
+        var utterance = new SpeechSynthesisUtterance("I'm sorry. Please forgive me Ben.");
         utterance.pitch = 1;
         window.speechSynthesis.speak(utterance);
     } else {
